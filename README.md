@@ -33,8 +33,14 @@ Swift in Obj C
     }
 
 
-The above class is a Swift Class File creating and instance on Obj C class TestObjC and accessing its properties and methods 
+The above class is a Swift Class File creating an  instance of an ObjC class TestObjC and accessing its properties and methods 
 
-In testObjC.testSwift()  when we jump to Obj C file we use Swift Class TestSwift and access its methods. 
+In line testObjC.testSwift()  when we jump to Obj C file we use Swift Class TestSwift and access its methods. 
 
-I am just lazy to create two different project , so I showed both in One. Check the medium article above for  more detailed explanation.
+    - (void) testSwift {
+    TestSwift* swiftObj = [[TestSwift alloc] init];
+    [swiftObj testsFunction:@"Hello Swift"];
+    }
+
+
+Sorry !!! I am just lazy to create two different project , so I showed both  the use case in one project . Check the medium article above for  more detailed explanation and insight. 
