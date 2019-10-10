@@ -17,11 +17,10 @@ Swift in Obj C
 
 #Code Explanation:
 
-import UIKit
+     import UIKit
+      class ViewController: UIViewController {
 
-class ViewController: UIViewController {
-
-override func viewDidLoad() {
+       override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
@@ -30,8 +29,8 @@ override func viewDidLoad() {
         print(testObjC.testProperty!)
         testObjC.testMethod()  
         testObjC.testSwift()
+     }
     }
-}
 
 
 The above class is a Swift Class File creating and instance on Obj C class TestObjC and accessing its properties and methods 
